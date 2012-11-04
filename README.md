@@ -1,4 +1,4 @@
-"Cross-Domain Delete Cookies API Extension
+Cross-Domain Delete Cookies API Extension
 ==========================================
 **WARNING: This is a ridiculously dangerous extension and shouldn't be used 
 unless you know exactly what you're installing/doing.**
