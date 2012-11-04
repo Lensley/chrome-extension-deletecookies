@@ -1,0 +1,29 @@
+// See http://developer.chrome.com/extensions/manifest.html
+{
+  "name": "Cross-Domain Delete Cookies API",
+  "description": "Allows any page to delete any cookies.",
+  "version": "1.0",
+  "icons": {  "16": "icon16.png",
+              "48": "icon48.jpg",
+             "128": "icon128.jpg" },
+
+  "permissions": [
+    "cookies",
+    "tabs", 
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "background": { 
+    "scripts": ["background.js"] 
+  },
+
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["cookies.js"],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+
+  "manifest_version": 2
+}
