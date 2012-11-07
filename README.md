@@ -8,7 +8,7 @@ via Javascript.  Yes, this is as dangerous (or at least, as annoying) as it
 sounds.
 
 If you have a good reason to use this, you can make this more secure by 
-modifying the manifest.json.
+modifying the manifest.json to be more restrictive.
 
 Usage
 -----
